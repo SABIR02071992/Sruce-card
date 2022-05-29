@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddProductActivity">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar">
+
+        </include>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginLeft="30dp"
+
+                    android:layout_marginRight="30dp"
+                    android:padding="2dp"
+                    android:text="Category Select"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/main_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:gravity="start"
+                    android:padding="7dp">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/searchable_main_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp"
+                        android:hint="User ID" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:gravity="start"
+                    android:padding="7dp">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/searchable_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp"
+                        android:hint="User ID" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/sub_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:gravity="start"
+                    android:padding="7dp">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/sub_searchable_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp"
+                        android:hint="User ID" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp">
+
+                    <EditText
+                        android:id="@+id/product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Product Name "
+                        android:inputType="text"
+                        android:minLines="1"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp">
+
+                    <EditText
+                        android:id="@+id/product_brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Product Brand "
+                        android:inputType="text"
+                        android:minLines="1"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp">
+
+                    <EditText
+                        android:id="@+id/product_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Product Price "
+                        android:inputType="number"
+                        android:minLines="1"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp">
+
+                    <EditText
+                        android:id="@+id/product_dist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Product Discount "
+                        android:inputType="number"
+                        android:minLines="1"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/white_edit_text_button_rippel"
+        android:padding="6dp">
+
+        <EditText
+            android:id="@+id/gst_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="SGST "
+            android:inputType="number"
+            android:minLines="1"
+            android:padding="6dp"
+            android:textSize="15sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/white_edit_text_button_rippel"
+        android:padding="6dp">
+
+        <EditText
+            android:id="@+id/cgstf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="CGST "
+            android:inputType="number"
+            android:minLines="1"
+            android:padding="6dp"
+            android:textSize="15sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
+<LinearLayout
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="30dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_edit_text_button_rippel"
+        android:padding="6dp">
+
+        <EditText
+            android:id="@+id/color_edit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Add Color "
+            android:inputType="text"
+            android:minLines="1"
+            android:padding="6dp"
+            android:textSize="15sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_edit_text_button_rippel"
+        android:padding="6dp">
+        <EditText
+            android:id="@+id/size_edit"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Size "
+            android:inputType="text"
+            android:textAllCaps="true"
+            android:minLines="1"
+            android:padding="6dp"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_edit_text_button_rippel"
+        android:padding="6dp">
+
+        <EditText
+            android:id="@+id/available_Quantity"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Item Quantity "
+            android:inputType="number"
+            android:minLines="1"
+            android:padding="6dp"
+            android:textSize="15sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+
+    android:id="@+id/color_add"
+    android:padding="6dp"
+        android:src="@drawable/add"
+    android:layout_marginLeft="1dp"
+    android:textColor="@color/white"
+    android:text="Add"
+    android:layout_width="@dimen/dimen_70dp"
+    android:layout_height="@dimen/dimen_70dp">
+
+</ImageView>
+</LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginLeft="30dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/recy_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Upload Images *"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_below="@+id/button_galary"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/cloud_computing">
+
+                </ImageView>
+
+                <LinearLayout
+                    android:id="@+id/imageLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_set"
+                    android:layout_width="190dp"
+                    android:layout_height="110dp"
+                    android:layout_below="@+id/button_galary"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/no_image"
+                    android:visibility="gone">
+
+                </ImageView>
+
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/image"
+                    android:layout_weight="2" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="90dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="27dp">
+
+                    <EditText
+                        android:id="@+id/product_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Product Description "
+                        android:inputType="textMultiLine"
+                        android:maxLines="32"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+
+                    android:id="@+id/submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="Submit"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

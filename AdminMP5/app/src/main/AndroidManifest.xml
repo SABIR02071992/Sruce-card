@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mpfaith.adminmp5">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/madmin"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".Activity.UpdateSellerDetailsActivity"
+            android:exported="true" />
+        <activity android:name=".Activity.ViewOrederListActivity" />
+        <activity android:name=".Activity.ProductOrderManagementActivity" />
+        <activity android:name=".Activity.PaymentListActivity" />
+        <activity android:name=".Activity.PaymentManagementActivity" />
+        <activity android:name=".Activity.UpdateProductLisActivity" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.wearable.standalone" -->
+        <!-- android:value="true" /> -->
+        <!-- <activity -->
+        <!-- android:name=".Activity.UpodateProductListActivity" -->
+        <!-- android:label="@string/title_activity_upodate_product_list"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity android:name=".Activity.ProductListActivity" />
+        <activity android:name=".Activity.AddProductActivity" />
+        <activity android:name=".Activity.MangerActivity" />
+        <activity android:name=".Activity.ProfileActivity" />
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.DashboardActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

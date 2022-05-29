@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ViewOrederListActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar">
+        </include>
+
+<ScrollView
+    android:scrollbars="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+<androidx.cardview.widget.CardView
+    app:cardCornerRadius="@dimen/dimen_2dp"
+    app:cardElevation="@dimen/dimen_5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:id="@+id/restImage"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:src="@drawable/no_image">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:clickable="true"
+            tools:context=".SelectText"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/customer_number"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Product Name"
+                android:textIsSelectable="true"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/customer_mobile_colon"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=":"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:clickable="true"
+            tools:context=".SelectText"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Brand"
+                android:textIsSelectable="true"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=":"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/product_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_5dp"
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:clickable="true"
+            tools:context=".SelectText"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Quantity"
+                android:textIsSelectable="true"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=":"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/product_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginEnd="15dp"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:layout_marginStart="10dp"
+                android:singleLine="true"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:clickable="true"
+            tools:context=".SelectText"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Payment Mode"
+                android:textIsSelectable="true"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=":"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/payment_mode"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginEnd="15dp"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:layout_marginStart="10dp"
+                android:singleLine="true"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:clickable="true"
+            tools:context=".SelectText"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Product Price"
+                android:textIsSelectable="true"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=":"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginEnd="15dp"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:layout_marginStart="10dp"
+                android:singleLine="true"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:clickable="true"
+            tools:context=".SelectText"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Discount"
+                android:textIsSelectable="true"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=":"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/product_discount"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginEnd="15dp"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:layout_marginStart="10dp"
+                android:singleLine="true"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:clickable="true"
+            tools:context=".SelectText"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Total Price"
+                android:textIsSelectable="true"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=":"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginEnd="15dp"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:layout_marginStart="10dp"
+                android:singleLine="true"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="7dp"
+                    android:background="#000">
+
+                </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:clickable="true"
+            tools:context=".SelectText"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Delivery Address"
+                android:textIsSelectable="true"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=":"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/product_deliveryAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+<!--        <TextView-->
+<!--            android:layout_marginTop="@dimen/dimen_2dp"-->
+<!--            android:id="@+id/deliveryAddress"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/dimen_30dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:text=" "-->
+<!--            android:textSize="15sp"-->
+<!--            />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:clickable="true"
+            tools:context=".SelectText"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Mobile Number"
+                android:textIsSelectable="true"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=":"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginEnd="15dp"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:layout_marginStart="10dp"
+                android:singleLine="true"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+                <!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Status :"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textColor="@color/black"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/product_status"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text=" "-->
+<!--                        android:textSize="15sp"-->
+<!--                        />-->
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Store Id :"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textColor="@color/black"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/product_storeId"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text=" "-->
+<!--                        android:textSize="15sp"-->
+<!--                        />-->
+
+<!--                </LinearLayout>-->
+
+            </LinearLayout>
+</ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

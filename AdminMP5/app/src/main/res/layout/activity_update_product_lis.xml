@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UpdateProductLisActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar">
+
+        </include>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:padding="2dp"
+                    android:text="Category Select"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:id="@+id/search1"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/white_edit_text_button_rippel"
+                        android:gravity="start"
+                        android:padding="7dp">
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/searchable_main_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="1dp"
+                            android:hint="User ID" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/spp_text_lay_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp">
+
+                    <TextView
+                        android:id="@+id/cat_text_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:text=""
+                        android:minLines="1"
+                        android:background="@null"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/search2"
+                    android:visibility="gone"
+
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/white_edit_text_button_rippel"
+                        android:gravity="start"
+                        android:padding="7dp">
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/searchable_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="1dp"
+                            android:hint="User ID" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/spp_text_lay_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp">
+
+                    <TextView
+                        android:id="@+id/cat_text_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:inputType="text"
+                        android:minLines="1"
+                        android:background="@null"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/search3"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/sub_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/white_edit_text_button_rippel"
+                        android:gravity="start"
+                        android:padding="7dp">
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/sub_searchable_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="1dp"
+                            android:hint="User ID" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:id="@+id/product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Product Name "
+                        android:inputType="text"
+                        android:minLines="1"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp">
+
+                    <EditText
+                        android:id="@+id/product_brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Product Brand "
+                        android:inputType="text"
+                        android:minLines="1"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp">
+
+                    <EditText
+                        android:id="@+id/product_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Product Price "
+                        android:inputType="number"
+                        android:minLines="1"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp">
+
+                    <EditText
+                        android:id="@+id/product_dist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Product Discount "
+                        android:inputType="number"
+                        android:minLines="1"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="30dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text="Upload Images *"-->
+<!--                    android:textSize="15sp" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/image"-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="110dp"-->
+<!--                    android:layout_below="@+id/button_galary"-->
+<!--                    android:layout_marginStart="30dp"-->
+<!--                    android:layout_marginEnd="30dp"-->
+<!--                    android:src="@drawable/cloud_computing">-->
+
+<!--                </ImageView>-->
+
+                <LinearLayout
+                    android:id="@+id/imageLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_set"
+                    android:layout_width="190dp"
+                    android:layout_height="110dp"
+                    android:layout_below="@+id/button_galary"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/no_image"
+                    android:visibility="gone">
+
+                </ImageView>
+
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+<!--                <ListView-->
+<!--                    android:id="@+id/listView"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:layout_below="@+id/image"-->
+<!--                    android:layout_weight="2" />-->
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="90dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="27dp">
+
+                    <EditText
+                        android:id="@+id/product_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Product Description "
+                        android:inputType="textMultiLine"
+                        android:maxLines="32"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+
+                    android:id="@+id/submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="Submit"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relativeLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        >-->
+
+<!--        <include-->
+<!--            android:id="@+id/toolbar"-->
+<!--            layout="@layout/toolbar">-->
+
+<!--        </include>-->
+
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_below="@+id/toolbar">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/spp_text_lay"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:background="@drawable/white_edit_text_button_rippel"-->
+<!--                    android:padding="6dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginRight="30dp">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/spp_text_1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint=" "-->
+<!--                        android:inputType="text"-->
+<!--                        android:minLines="1"-->
+<!--                        android:background="@null"-->
+<!--                        android:padding="6dp"-->
+<!--                        android:textSize="15sp" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:id="@+id/spp_lay_1"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/main_category"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="start"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginRight="30dp"-->
+<!--                        android:background="@drawable/white_edit_text_button_rippel"-->
+<!--                        android:gravity="start"-->
+<!--                        android:padding="7dp">-->
+
+<!--                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+<!--                            android:id="@+id/searchable_main_category"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_marginTop="1dp"-->
+<!--                            android:hint="User ID" />-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--                </LinearLayout>-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/spp_text_lay_2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:background="@drawable/white_edit_text_button_rippel"-->
+<!--                    android:padding="6dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginRight="30dp">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/cat_text_2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint=" "-->
+<!--                        android:inputType="text"-->
+<!--                        android:minLines="1"-->
+<!--                        android:background="@null"-->
+<!--                        android:padding="6dp"-->
+<!--                        android:textSize="15sp" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:visibility="gone"-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:id="@+id/search2"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/category"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="start"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginRight="30dp"-->
+<!--                        android:background="@drawable/white_edit_text_button_rippel"-->
+<!--                        android:gravity="start"-->
+<!--                        android:padding="7dp">-->
+
+<!--                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+<!--                            android:id="@+id/searchable_category"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_marginTop="1dp"-->
+<!--                            android:hint="User ID" />-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/spp_text_lay_3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:background="@drawable/white_edit_text_button_rippel"-->
+<!--                    android:padding="6dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginRight="30dp">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/cat_text_3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint=" "-->
+<!--                        android:inputType=""-->
+<!--                        android:minLines="1"-->
+<!--                        android:background="@null"-->
+<!--                        android:padding="6dp"-->
+<!--                        android:textSize="15sp" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:id="@+id/search3"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/sub_category"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="start"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginRight="30dp"-->
+<!--                        android:background="@drawable/white_edit_text_button_rippel"-->
+<!--                        android:gravity="start"-->
+<!--                        android:padding="7dp">-->
+
+<!--                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+<!--                            android:id="@+id/sub_searchable_category"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_marginTop="1dp"-->
+<!--                            android:hint="User ID" />-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--                </LinearLayout>-->
+
+
+
+<!--                &lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_marginTop="@dimen/dimen_20dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_marginLeft="30dp"&ndash;&gt;-->
+
+<!--                &lt;!&ndash;                    android:layout_marginRight="30dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:padding="2dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:text="Category Select"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:textSize="16sp" />&ndash;&gt;-->
+
+
+
+<!--                &lt;!&ndash;                <com.google.android.material.textfield.TextInputLayout&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:id="@+id/category"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_gravity="start"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_marginLeft="30dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_marginTop="10dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_marginRight="30dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:background="@drawable/white_edit_text_button_rippel"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:gravity="start"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:padding="7dp">&ndash;&gt;-->
+
+<!--                &lt;!&ndash;                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner&ndash;&gt;-->
+<!--                &lt;!&ndash;                        android:id="@+id/searchable_category"&ndash;&gt;-->
+<!--                &lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;                        android:layout_height="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;                        android:layout_marginTop="1dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                        android:hint="User ID" />&ndash;&gt;-->
+<!--                &lt;!&ndash;                </com.google.android.material.textfield.TextInputLayout>&ndash;&gt;-->
+
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginRight="30dp"-->
+<!--                    android:background="@drawable/white_edit_text_button_rippel"-->
+<!--                    android:padding="6dp">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/product_name"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@null"-->
+<!--                        android:hint="Product Name "-->
+<!--                        android:inputType="text"-->
+<!--                        android:minLines="1"-->
+<!--                        android:padding="6dp"-->
+<!--                        android:textSize="15sp" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginRight="30dp"-->
+<!--                    android:background="@drawable/white_edit_text_button_rippel"-->
+<!--                    android:padding="6dp">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/product_brand"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@null"-->
+<!--                        android:hint="Product Brand "-->
+<!--                        android:inputType="text"-->
+<!--                        android:minLines="1"-->
+<!--                        android:padding="6dp"-->
+<!--                        android:textSize="15sp" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginRight="30dp"-->
+<!--                    android:background="@drawable/white_edit_text_button_rippel"-->
+<!--                    android:padding="6dp">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/product_price"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@null"-->
+<!--                        android:hint="Product Price "-->
+<!--                        android:inputType="number"-->
+<!--                        android:minLines="1"-->
+<!--                        android:padding="6dp"-->
+<!--                        android:textSize="15sp" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginRight="30dp"-->
+<!--                    android:background="@drawable/white_edit_text_button_rippel"-->
+<!--                    android:padding="6dp">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/product_dist"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@null"-->
+<!--                        android:hint="Product Discount "-->
+<!--                        android:inputType="number"-->
+<!--                        android:minLines="1"-->
+<!--                        android:padding="6dp"-->
+<!--                        android:textSize="15sp" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--                &lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_marginStart="30dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_marginTop="15dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:maxLines="1"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:singleLine="true"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:text="Upload Images *"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:textSize="15sp" />&ndash;&gt;-->
+
+<!--                &lt;!&ndash;                <ImageView&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:id="@+id/image"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_width="110dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_height="110dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_below="@+id/button_galary"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_marginStart="30dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_marginEnd="30dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:src="@drawable/cloud_computing">&ndash;&gt;-->
+
+<!--                &lt;!&ndash;                </ImageView>&ndash;&gt;-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/imageLayout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="30dp"-->
+<!--                    android:layout_marginEnd="30dp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                </LinearLayout>-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/image_set"-->
+<!--                    android:layout_width="190dp"-->
+<!--                    android:layout_height="110dp"-->
+<!--                    android:layout_below="@+id/button_galary"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="30dp"-->
+<!--                    android:layout_marginEnd="30dp"-->
+<!--                    android:src="@drawable/no_image"-->
+<!--                    android:visibility="gone">-->
+
+<!--                </ImageView>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/container"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                </LinearLayout>-->
+
+<!--                &lt;!&ndash;                <ListView&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:id="@+id/listView"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_height="200dp"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_below="@+id/image"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_weight="2" />&ndash;&gt;-->
+
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginRight="30dp"-->
+<!--                    android:layout_marginBottom="90dp"-->
+<!--                    android:background="@drawable/white_edit_text_button_rippel"-->
+<!--                    android:padding="27dp">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/product_description"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@null"-->
+<!--                        android:hint="Product Description "-->
+<!--                        android:inputType="textMultiLine"-->
+<!--                        android:maxLines="32"-->
+<!--                        android:padding="10dp"-->
+<!--                        android:textSize="15sp" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                <Button-->
+
+<!--                    android:id="@+id/submit_button"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="20dp"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:background="@color/colorPrimaryDark"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:text="Submit"-->
+<!--                    android:textStyle="bold" />-->
+
+
+<!--            </LinearLayout>-->
+
+
+<!--        </ScrollView>-->
+<!--    </RelativeLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

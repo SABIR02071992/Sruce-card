@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Spruce Merchant</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="rest_otp">Resend OTP</string>
+    <string name="otp">Please enter the OTP sent to your mobile number</string>
+    <string name="get_otp">OK</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email">Email id</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="mobile_no_ent">Enter your phone number </string>
+    <string name="next">Next </string>
+    <string name="submit">Submit </string>
+
+
+</resources>

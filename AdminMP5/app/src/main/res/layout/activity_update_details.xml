@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UpdateSellerDetailsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar">
+
+        </include>
+        <ScrollView
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginTop="@dimen/dimen_30dp"-->
+<!--                    android:background="@drawable/white_edit_text_button_rippel"-->
+<!--                    android:padding="6dp"-->
+
+<!--                    android:layout_marginRight="30dp">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/first_name"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="First Name "-->
+<!--                        android:inputType="text"-->
+<!--                        android:minLines="1"-->
+<!--                        android:background="@null"-->
+<!--                        android:padding="6dp"-->
+<!--                        android:textSize="15sp" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginTop="@dimen/dimen_30dp"-->
+
+<!--                    android:background="@drawable/white_edit_text_button_rippel"-->
+<!--                    android:padding="6dp"-->
+
+<!--                    android:layout_marginRight="30dp">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/last_name"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="Last Name "-->
+<!--                        android:inputType="text"-->
+<!--                        android:minLines="1"-->
+<!--                        android:background="@null"-->
+<!--                        android:padding="6dp"-->
+<!--                        android:textSize="15sp" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginTop="@dimen/dimen_30dp"-->
+
+<!--                    android:background="@drawable/white_edit_text_button_rippel"-->
+<!--                    android:padding="6dp"-->
+
+<!--                    android:layout_marginRight="30dp">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/email_id"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="Email Id "-->
+<!--                        android:inputType="text"-->
+<!--                        android:minLines="1"-->
+<!--                        android:background="@null"-->
+<!--                        android:padding="6dp"-->
+<!--                        android:textSize="15sp" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp">
+
+                    <EditText
+                        android:id="@+id/sellerAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="seller Address "
+                        android:inputType="text"
+                        android:minLines="1"
+                        android:background="@null"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp">
+
+                    <EditText
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="city "
+                        android:inputType="text"
+                        android:minLines="1"
+                        android:background="@null"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp">
+
+                    <EditText
+                        android:id="@+id/pinCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Pin Code "
+                        android:inputType="number"
+                        android:minLines="1"
+                        android:background="@null"
+                        android:maxLength="6"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp">
+
+                    <EditText
+                        android:id="@+id/state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="State "
+                        android:inputType="text"
+                        android:minLines="1"
+                        android:background="@null"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp">
+
+                    <EditText
+                        android:id="@+id/gst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="GST "
+                        android:inputType="text"
+                        android:minLines="1"
+                        android:background="@null"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/white_edit_text_button_rippel"
+                    android:padding="6dp"
+                    android:layout_marginBottom="@dimen/dimen_30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp">
+
+                    <EditText
+                        android:id="@+id/pan_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Pan Card "
+                        android:inputType="text"
+                        android:minLines="1"
+                        android:background="@null"
+                        android:padding="6dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <Button
+
+                    android:id="@+id/update_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="10dp"
+                    android:text="Update"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

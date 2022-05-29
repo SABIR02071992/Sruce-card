@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfileActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorPrimary">
+
+                    <ImageView
+                        android:id="@+id/back_p"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:src="@drawable/ic_baseline_keyboard_backspace_24">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/edit_images_p"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginEnd="30dp"
+                        android:src="@drawable/information">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="80dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/pro_im_p"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/bg_circle"
+                            android:src="@drawable/no_image"
+                            app:civ_border_color="#fff"
+                            app:civ_border_width="0.5dp"
+                            app:civ_shadow="true"
+                            app:civ_shadow_color="@color/colorPrimary"
+                            app:civ_shadow_radius="0.8" />
+                        <!--                        <com.mikhaellopez.circularimageview.CircularImageView-->
+                        <!--                            android:id="@+id/pro_ima_2"-->
+                        <!--                            android:visibility="visible"-->
+                        <!--                            android:layout_width = "90dp"-->
+                        <!--                            android:layout_height = "90dp"-->
+                        <!--                            android:layout_gravity="start"-->
+                        <!--                            android:layout_marginStart="20dp"-->
+                        <!--                            android:layout_marginTop="30dp"-->
+                        <!--                            android:src = "@drawable/no_image"-->
+                        <!--                            app:civ_border_color = "#fff"-->
+                        <!--                            app:civ_border_width = "0.5dp"-->
+                        <!--                            android:background="@drawable/bg_circle"-->
+                        <!--                            app:civ_shadow = "true"-->
+                        <!--                            app:civ_shadow_radius = "0.8"-->
+                        <!--                            app:civ_shadow_color = "@color/colorPrimary"/>-->
+
+                                                <LinearLayout
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:orientation="vertical"
+                                                    android:padding="5dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent">
+
+                                                    <TextView
+                                                        android:id="@+id/name_user_p"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginTop="10dp"
+                                                        android:drawableLeft="@drawable/user"
+                                                        android:fontFamily="@font/andika"
+                                                        android:maxLines="1"
+                                                        android:text="    "
+                                                        android:textSize="16sp"
+                                                        android:textStyle="normal" />
+                                                    <TextView
+                                                        android:id="@+id/email_id_p"
+                                                        android:text = "   "
+                                                        android:maxLines="1"
+                                                        android:drawableLeft="@drawable/email"
+                                                        android:textStyle="normal"
+                                                        android:fontFamily="@font/andika"
+                                                        android:layout_width = "match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center|start"
+                                                        android:layout_height = "wrap_content"
+                                                        android:layout_marginTop = "10dp"
+                                                        android:textSize = "20sp"
+                                                        />
+                                                    <TextView
+                                                        android:id="@+id/mobile_number_p"
+                                                        android:text =  "   "
+                                                        android:maxLines="1"
+                                                        android:textStyle="normal"
+                                                        android:drawableLeft="@drawable/mobile_num"
+                                                        android:maxLength="10"
+                                                        android:fontFamily="@font/andika"
+                                                        android:layout_width = "match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center|start"
+                                                        android:layout_height = "wrap_content"
+                                                        android:layout_marginTop = "10dp"
+                                                        android:textSize="16sp"
+                                                        />
+                                                </LinearLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <!--            <androidx.cardview.widget.CardView-->
+                    <!--                android:id="@+id/bod_card"-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="50dp"-->
+                    <!--                android:layout_margin="10dp"-->
+                    <!--                android:layout_marginStart="20dp"-->
+                    <!--                android:layout_marginTop="0dp"-->
+                    <!--                android:layout_marginEnd="20dp"-->
+                    <!--                android:padding="10dp"-->
+                    <!--                app:cardCornerRadius="5dp"-->
+                    <!--                app:cardElevation="5dp">-->
+
+                    <!--                <ImageView-->
+                    <!--                    android:paddingStart="20dp"-->
+                    <!--                    android:padding="8dp"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_gravity="center|start"-->
+                    <!--                    android:foregroundGravity="center"-->
+                    <!--                    app:srcCompat="@drawable/birthday_cake" />-->
+
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/dof"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="20dp"-->
+                    <!--                    android:layout_gravity="left|center"-->
+                    <!--                    android:layout_marginLeft="50dp"-->
+                    <!--                    android:gravity="center"-->
+                    <!--                    android:padding="8dp"-->
+                    <!--                    android:text="Details" />-->
+
+                    <!--                <ImageView-->
+                    <!--                    android:layout_width="25dp"-->
+                    <!--                    android:layout_height="25dp"-->
+                    <!--                    android:layout_gravity="center|end"-->
+                    <!--                    android:foregroundGravity="center"-->
+                    <!--                    android:paddingRight="10dp"-->
+                    <!--                    app:srcCompat="@drawable/arrow" />-->
+
+                    <!--            </androidx.cardview.widget.CardView>-->
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="20dp"
+                        android:padding="10dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                          android:foregroundGravity="center"
+                            android:padding="8dp"
+                            android:paddingStart="20dp"
+                            app:srcCompat="@drawable/search" />
+
+                        <TextView
+                            android:id="@+id/gst"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|start"
+                            android:layout_marginLeft="50dp"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:paddingStart="20dp"
+                            android:text="GST" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center|end"
+                            android:foregroundGravity="center"
+                            android:paddingRight="10dp"
+                            app:srcCompat="@drawable/arrow" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/det_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="20dp"
+                        android:padding="10dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:foregroundGravity="center"
+                            android:padding="8dp"
+                            android:paddingStart="20dp"
+                            app:srcCompat="@drawable/credit_card" />
+
+
+                        <TextView
+                            android:id="@+id/pan_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|start"
+                            android:layout_marginLeft="50dp"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:paddingStart="20dp"
+                            android:text="Pan Card " />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center|end"
+                            android:foregroundGravity="center"
+                            android:paddingRight="10dp"
+                            app:srcCompat="@drawable/arrow" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="20dp"
+                        android:padding="10dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:foregroundGravity="center"
+                            android:padding="8dp"
+                            android:paddingStart="20dp"
+                            app:srcCompat="@drawable/cityscape" />
+
+
+                        <TextView
+                            android:id="@+id/pin_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|start"
+                            android:layout_marginLeft="50dp"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:paddingStart="20dp"
+                            android:text="Pin code" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center|end"
+                            android:foregroundGravity="center"
+                            android:paddingRight="10dp"
+                            app:srcCompat="@drawable/arrow" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/pan_det_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="20dp"
+                        android:padding="10dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:foregroundGravity="center"
+                            android:padding="8dp"
+                            android:paddingStart="20dp"
+                            app:srcCompat="@drawable/home_address" />
+
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|start"
+                            android:layout_marginLeft="50dp"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:paddingStart="20dp"
+                            android:text="Address" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center|end"
+                            android:foregroundGravity="center"
+                            android:paddingRight="10dp"
+                            app:srcCompat="@drawable/arrow" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
